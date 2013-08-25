@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'PFDinTextPro-Bold'; /* Гарнитура шрифта */
+    src: url(../font/PFDinTextPro-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+   
+/* General */
+* {
+	outline: none !important;
+}
+html {
+	overflow-x: hidden;
+}
+
+body {
+    background-color: #FFF;
+    font-size: 10px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: -10px auto;
+    max-width: 94%;
+}
+/** Header **/
+#header {
+    margin: 0 auto;
+    position: relative;
+    width: 941px;
+    height: 60px;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 280px;
+}
+
+#add_post {
+    position: absolute;
+    width: 295px;
+    left: 320px;
+    top: 0;
+}
+
+#post_left {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 150px;
+}
+
+#post_right {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+
+#post_text_left {
+    position: absolute;
+    color: #FFF;
+    top: 0;
+    right: 15px;
+    width: 100px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#post_text_right {
+    position: absolute;
+    color: #FFF;
+    top: 0;
+    left: -98px;
+    width: 100px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#profile {
+    position: absolute;
+    width: 280px;
+    right: 0;
+}
+
+#name {
+    font-size: 1.2em;
+    color: #323232;
+    position: absolute;
+    top: 15px;
+    right: 65px;
+}
+
+#tools {
+    font-size: 1.1em;
+    color: #323232;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    width: 160px;
+}
+
+#tools a {
+    padding: 0 0 0 10px;
+    font-size: 1em;
+    color: #323232;
+}
+
+#profile_image img {
+    padding-top: 5px;
+    right: 0px;
+    position: absolute;
+}
+ /** Menu Nav **/
+#menu {
+    position: relative;
+    height: 34px;
+    background: url('../img/menu_background.png') repeat-x;
+}
+
+#menu .nav {
+    margin: 0 auto;
+    width: 941px;
+    height: 34px;
+    position: relative;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    top: 10px;
+}
+
+#menu .nav a {
+    color: #696969;
+}
+
+#menu .nav .item {
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+
+#menu .nav .first {
+    text-align: left;
+}
+
+#menu .nav .last {
+    text-align: right;
+}
+
+/** Advertisement A **/
+.advertisementA {
+    position: relative;
+    margin: 0 auto;
+    width: 941px;
+    height: 92px;
+    top: 10px;
+    background-image: url('../img/advertisement A.png');
+}
+
+/** Search **/
+#search {
+    position: relative;
+    margin: 0 auto;
+    width: 941px;
+    height: 290px;
+    top: 10px;
+    background-image: url('../img/slide A.png');
+}
+
+#search .left {
+    font-size: 3.5em;
+    font-family: PFDinTextPro-Bold;
+    position: relative;
+    float: left;
+    top: 25px;
+    width: 210px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#search .right {
+    font-size: 3.5em;
+    font-family: PFDinTextPro-Bold;
+    position: relative;
+    float: right;
+    top: 25px;
+    width: 300px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#search .button {
+    background-image: url('../img/button.png');
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    width: 326px;
+    height: 73px;
+    font-family: PFDinTextPro-Bold;
+    font-size: 2.5em;
+    text-align: center;
+    color: white; 
+    text-transform: uppercase;
+}
+
+#search .button p {
+    top: 10px;
+}
+
+
+/** Auto catalog **/
+#auto_catalog {
+    background-image: url('../img/auto_catalog.png');
+    width: 1072px;
+    height: 418px;
+    position: relative;
+    margin: 0 auto;
+    top: 25px;
+}
+
+.catalog {
+    width: 941px;
+    position: relative;
+    margin: 0 auto;
+    height: 418px;
+}
+
+.categories {
+    font-size: 1.4em;
+    color: #FFF;
+    position: absolute;
+    top: 40px;
+}
+
+.categories ul {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+    font-size: 0.8em;
+}
+
+.categories li {
+    line-height: 22px;
+}
+
+.advertisementB {
+    width: 219px;
+    height: 217px;
+    background-image: url('../img/advertisement B.png');
+}
+
+.announcement {
+    font-size: 1.4em;
+    color: #FFF;
+    position: absolute;
+    top: 40px;
+    right: 245px;
+}
+
+.announcement ul {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+    font-size: 0.8em;
+    width: 360px;
+    overflow: hidden;
+}
+
+.announcement li {
+    line-height: 22px;
+    float: left;
+    display: inline;
+}
+
+#triple li {
+    width:33.333%;
+}
+
+.search_auto {
+    position: absolute;
+    top: -5px;
+    padding-top: -10px;
+    right: 6px;
+    width: 220px;
+    height: 111px;
+    background-image: url('../img/tag.png');
+    text-align: center;
+}
+
+.search_auto .tag_corner {
+    background-image: url('../img/tag_corner.png');
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    left: -9px;
+}
+
+.search_auto .car {
+    background-image: url('../img/car.png');
+    position: absolute;
+    width: 188px;
+    height: 79px;
+    top: 25px;
+    left: 10px;
+}
+
+.search_auto p {
+    font-size: 1.2em;
+    color: #FFF;
+    position: relative;
+    top: -5px;
+}
+
+/** Styled Select **/
+.select select {
+    background: transparent;
+    color: #8a8a8a;
+    width: 210px;
+    padding: 5px;
+    font-size: 1em;
+    border: 0;
+    height: 30px;
+    -webkit-appearance: none;
+} 
+
+.select {
+    width: 210px;
+    height: 30px;
+    background: url('../img/select.png') no-repeat 96%;
+}
+
+.select.mark {
+    top: 120px;
+    position: absolute;
+    right: 10px;
+}
+
+.select.model {
+    top: 160px;
+    position: absolute;
+    right: 10px;
+}
+
+.textfield input {
+    background: transparent;
+    color: #8a8a8a;
+    width: 204px;
+    padding-left: 5px;
+    font-size: 1em;
+    border: 0;
+    height: 30px;
+    -webkit-appearance: none;
+}
+
+.textfield.city {
+    position: absolute;
+    top: 200px;
+    width: 204px;
+    height: 30px;
+    background-image: url('../img/textfield.png');
+    right: 12px;
+}
+
+.textfield.year input {
+    background: transparent;
+    color: #8a8a8a;
+    width: 65px;
+    padding-left: 5px;
+    font-size: 1em;
+    border: 0;
+    height: 29px;
+    -webkit-appearance: none;
+}
+
+.textfield.year.from{
+    position: absolute;
+    top: 240px;
+    width: 65px;
+    height: 29px;
+    background-image: url('../img/textfield_short.png');
+    right: 102px;
+}
+
+.textfield.year.to {
+    position: absolute;
+    top: 240px;
+    width: 65px;
+    height: 29px;
+    background-image: url('../img/textfield_short.png');
+    right: 12px;
+}
+
+.textfield.price input {
+    background: transparent;
+    color: #8a8a8a;
+    width: 65px;
+    padding-left: 5px;
+    font-size: 1em;
+    border: 0;
+    height: 29px;
+    -webkit-appearance: none;
+}
+
+.textfield.price.from{
+    position: absolute;
+    top: 280px;
+    width: 65px;
+    height: 29px;
+    background-image: url('../img/textfield_short.png');
+    right: 102px;
+}
+
+.textfield.price.to {
+    position: absolute;
+    top: 280px;
+    width: 65px;
+    height: 29px;
+    background-image: url('../img/textfield_short.png');
+    right: 12px;
+}
+
+.search_button {
+    position: absolute;
+    top: 377px;
+    right: 0;
+    background-image: url('../img/search_button.png');
+    width: 222px;
+    height: 35px;
+}
+
+.search_button p {
+    font-size: 1.6em;
+    color: #FFF;
+    position: relative;
+    top: -12px;
+    text-align: center;
+    text-transform: lowercase;
+    
+}
