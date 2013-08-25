@@ -129,8 +129,6 @@
             </div>
         </div>-->
     </div>
-<!-- Scripts -->
-<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
 
 </body>
 </html>
