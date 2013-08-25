@@ -56,7 +56,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=auto_db',
 			'emulatePrepare' => true,
 			'username' => 'auto_user',
-			'password' => 'Witenagemot91',
+			'password' => '123',
 			'charset' => 'utf8',
                         'tablePrefix' => 'tbl_',
 		),
