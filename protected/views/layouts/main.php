@@ -35,11 +35,20 @@
             </div>
             
             <!-- Profile -->
+            <?php if (!Yii::app()->user->isGuest) { ?>
             <div id="profile">
                 <div id="name">Магомед Магомедов</div>
                 <div id="tools"><a href="#">0 ЛС</a> <a href="#">Блокнот</a> <a href="#">Выйти</a></div>
                 <div id="profile_image"><img src="img/profile_image.png" /></div>
             </div>
+            <?php } else { ?>
+            <div id="profile">
+                <div id="login"><a href="#">Войти</a></div>
+                <div id="register"><a hfre="#">Зарегистрироваться</a></div>
+                <div id="profile_image"><img src="img/no_image.png" /></div>
+                <div id="login_form"><img src="img/login_bg.png" width="100%" /></div>
+            </div>
+            <?php } ?>
         </div>
         
         <!-- Menu -->
@@ -127,8 +136,33 @@
                     <input type="text" placeholder="Поиск"/><img src="img/search.png" />
                 </div>
             </div>
-        </div>-->
+        </div>
     </div>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+        $('#login').click(function() {
+            $('#login_form').slideDown('slow', function() {
+                // Animation complete.
+            });
+        });
+        $('#login').click(function(e) {
+            e.stopPropagation(); // This is the preferred method.
+            return false;        // This should not be used unless you do not want
+                                // any click events registering inside the div
+        });
+        $('#login_form').click(function(e) {
+            e.stopPropagation(); // This is the preferred method.
+            return false;        // This should not be used unless you do not want
+                                // any click events registering inside the div
+        });
+        $(document).click(function(){  
+        $('#login_form').hide(); //hide the button
 
+        });
+        });
+    </script>
 </body>
 </html>

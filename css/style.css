@@ -121,12 +121,41 @@ a {
     right: 65px;
 }
 
+#login {
+    font-size: 1.2em;
+    color: #808080;
+    position: absolute;
+    top: 15px;
+    right: 65px;
+}
+
+#login a:visited {
+    color: #808080;
+}
+
+#login_form {
+    display: none;
+    color: red;
+    position: absolute;
+    right: -4px;
+    z-index: 10;
+}
+
 #tools {
     font-size: 1.1em;
     color: #323232;
     position: absolute;
     top: 35px;
     right: 50px;
+    width: 160px;
+}
+
+#register {
+    font-size: 1.1em;
+    color: #808080;
+    position: absolute;
+    top: 35px;
+    right: 20px;
     width: 160px;
 }
 
